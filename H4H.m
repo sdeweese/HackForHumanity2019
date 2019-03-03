@@ -1,6 +1,6 @@
 net = alexnet % load alexnet
  
-imds = imageDatastore('/Images/Training', 'IncludeSubfolders',true,"LabelSource","Foldernames"); % create data store for training
+imds = imageDatastore('/Images/Training/', 'IncludeSubfolders',true,"LabelSource","Foldernames"); % create data store for training
 imds2 = imageDatastore('/Images/Predictions/', 'IncludeSubfolders',true,"LabelSource","Foldernames"); % create data store for the predictinos
 
 names = imds.Labels
